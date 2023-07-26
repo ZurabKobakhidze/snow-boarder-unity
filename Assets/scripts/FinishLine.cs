@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class FinishLine : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -9,7 +9,7 @@ public class FinishLine : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log("you finished!");
+            SceneManager.LoadScene(0);
         }
 
     }
